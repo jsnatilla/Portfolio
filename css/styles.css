@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+/* BODY */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:auto;
+  font-family: system-ui, sans-serif;
+  background-color: GhostWhite;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: flex;
+  }
+}
+p{
+  font-family: courier;
+}
+/* Body */
+
+a{
+  color: #f9c80eff;
+}
+
+a:hover{
+  color:#43bccdff;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin-top: 0;
+  padding: 24px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.info{
+  width:75%;
+  padding: 10;
+}
+
+button{
+  border-radius: 28px;
+}
+.butt{
+  background-color: GhostWhite;
+  border: none;
+  color: white;
+  padding: 15px 38px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.butt {
+  background-color: #f9c80eff;
+  color: GhostWhite;
+}
+
+.butt:hover {
+  background-color: rgba(102, 46, 155, 1);
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: GhostWhite;
+  width: 90%;
+  vertical-align: text-bottom;
+}
+
+.topnav a.far1:hover{
+margin: 40px 15px;
+background-color: #f86624ff;
+border-radius: 28px;
+}
+
+.topnav a.far1{
+margin: 40px 15px;
+background-color: #f9c80eff;
+
+}
+
+.topnav a.far2{
+margin: 40px 15px;
+background-color: #f9c80eff;
+
+}
+
+.topnav a.far2:hover{
+margin: 40px 15px;
+background-color: #f86624ff;
+border-radius: 28px;
+}
+
+
+.topnav a {
+  float: right;
+  color: GhostWhite;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  transition-duration: 0.2s;
+}
+
+.topnav a:hover {
+  color: GhostWhite;
+  display: inline-block;
+}
+
+.topnav a.split {
+  float: left;
+  background-color: GhostWhite;
+  color: white;
+  border-radius: 50%;
+}
+.topnav a.split:hover {
+  float: left;
+  background-color: #f9c80eff;
+  color: white;
+  border-radius: 50%;
+}
+
+h1{
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin-left: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: left;
+}
+h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #f9c80eff;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 7rem;
+}
